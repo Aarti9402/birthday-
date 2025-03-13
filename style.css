@@ -1,0 +1,94 @@
+body {
+  font-family: 'Playfair Display', serif; /* Classy font */
+  background-color: #f0e68c; /* Light pastel yellow */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(135deg, #f8cdda, #faeda1); /* Colorful gradient */
+  padding: 20px 0; /* Padding for the header */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin: 0; /* Remove margin */
+}
+
+main {
+  max-width: 1000px; /* Increased max-width to fit the horizontal layout */
+  margin: 20px auto;
+  padding: 20px;
+  background: white; /* White background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  margin: 20px 0;
+  text-align: center; /* Ensure titles and messages are centered */
+}
+
+h2 {
+  font-size: 2em;
+  color: #ff6f61; /* Coral color for section titles */
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points from list */
+  padding: 0; /* Remove padding */
+}
+
+li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  z-index: 1;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.base h4, .base h3 {
+  margin: 5px;
+  color: #333;
+  font-family: 'Playfair Display', serif; /* Use the same font as the body */
+}
